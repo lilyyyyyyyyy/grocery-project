@@ -33,3 +33,15 @@ products = sorted(products, key = operator.itemgetter('name'))
 
 for x in products:
     print(' + ' + x['name'] + str(' (${0:.2f})'.format(x['price'])))
+
+
+
+
+# 2. Checkpoint II - Printing Departments
+print('--------------')
+def department_name(y):
+    return y['department']
+
+depart = map(department_name, products)
+depart = set(list(depart))
+print("THERE ARE", str(len(depart)), 'DEPARTMENTS')
