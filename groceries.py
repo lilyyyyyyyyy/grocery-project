@@ -28,5 +28,8 @@ print(products)
 print('--------------')
 print("THERE ARE",str(len(products)), "PRODUCTS:")
 
+import operator
+products = sorted(products, key = operator.itemgetter('name'))
+
 for x in products:
     print(' + ' + x['name'] + str(' (${0:.2f})'.format(x['price'])))
