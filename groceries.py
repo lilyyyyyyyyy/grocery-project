@@ -24,5 +24,9 @@ products = [
 
 print(products)
 
+# 1. Checkpoint I - Printing Products
 print('--------------')
 print("THERE ARE",str(len(products)), "PRODUCTS:")
+
+for x in products:
+    print(' + ' + x['name'])
