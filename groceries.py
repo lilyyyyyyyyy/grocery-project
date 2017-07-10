@@ -45,3 +45,6 @@ def department_name(y):
 depart = map(department_name, products)
 depart = set(list(depart))
 print("THERE ARE", str(len(depart)), 'DEPARTMENTS')
+
+for dep in depart:
+    print(' + ' + dep)
