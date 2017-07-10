@@ -29,4 +29,4 @@ print('--------------')
 print("THERE ARE",str(len(products)), "PRODUCTS:")
 
 for x in products:
-    print(' + ' + x['name'])
+    print(' + ' + x['name'] + str(' (${0:.2f})'.format(x['price'])))
