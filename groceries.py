@@ -48,5 +48,10 @@ print("THERE ARE", str(len(depart)), 'DEPARTMENTS')
 
 depart = sorted(depart)
 
+def get_products(department_name):
+    return [product for product in products if product['department']== department_name]
+
 for dep in depart:
-    print(' + ' + dep)
+    department_product = get_products(dep)
+    product_count = len(department_product)
+    print(' + ' + dep.title() + ' (' + str(product_count) + ' products)')
